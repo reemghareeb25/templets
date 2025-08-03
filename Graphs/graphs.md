@@ -252,6 +252,30 @@ bool isBipartite() {
     return true;
 }
 
+// isBipartite check code (BFS)
+int bi[N];
+bool isBipartite(int src){// two sets, not have edges between every node in one set
+    // *notes -> any cycle in graph have (odd) nodes so it not bipartite
+    // -> it can be biColored
+    clr(bi, OO);
+    queue<int> q;
+    bi[src] = 1;
+    q.push(src);
+    while(!q.empty()){
+        int node = q.front();
+        q.pop();
+        for(auto child : adj[node]){
+            if(bi[child] == OO) {
+                q.push(child);
+                bi[child] = 3 - bi[node]; // 1 for set1, 2 for set2 other is not declared
+            }else if(bi[child] == bi[node]){
+                return false;
+            }
+        }
+    }
+    return true;
+}
+
 // ---------------------- Union-Find (DSU) ----------------------
 // checks if two nodes are in the same group, helps detect cycles and build minimum spanning trees
 
@@ -263,6 +287,9 @@ int find(int u) {
     if (u == par[u]) return u;
     return par[u] = find(par[u]);
 }
+bool sameSet(int x, int y){ // O(n)
+    return getRoot(x) == getRoot(y);
+}
 
 bool unite(int u, int v) {
     u = find(u); v = find(v);
@@ -271,6 +298,10 @@ bool unite(int u, int v) {
     par[v] = u;
     sz[u] += sz[v];
     return true;
+}
+int getSize(int x){
+    int leader = getRoot(x);
+    return setSize[leader];
 }
 
 // ---------------------- 0-1 BFS ----------------------
