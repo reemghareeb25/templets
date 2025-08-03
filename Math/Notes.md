@@ -46,3 +46,12 @@ Use: all divisors come in pairs before and after sqrt(n)
 
 **18. 10^9+7 and 998244353 are common mod values in problems**  
 Reason: both are prime, help avoid overflow and make division/mod easier
+
+----
+1) Number of subarrays for array of length n = (n*(n+1)/2)
+2) Number of subsets for array of length n = $2^n$ and -1 if you don't need the empty subset.
+3) if we need to make a triangle, and we have just one side of it's 3 sides.. Let's this side $n$
+so, 
+if a is odd --> we have a, so b=  $(a*a)/2$  and c = $(a*a)/2+1$;
+if a is even --> we have a, so b = $(a*a)/4 - 1$ and c = $(a*a)/4+1$
+How can we observe it? with generating some triangles and observe what is the relation between the 3 sides. 
