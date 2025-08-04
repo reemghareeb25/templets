@@ -1,12 +1,10 @@
 ## Reem's Math Notes – Number Theory Tricks
 
 **1. Number of digits = floor(log10(n)) + 1**  
-
 **2. log(a * b) = log(a) + log(b)**  
 Use: compare large multiplications without overflow
 
 **3. gcd(a, b) = gcd(a, b - a)**  
-
 **4. Any even number ≥ 4 = sum of two primes**  
 **5. Any odd number ≥ 7 = sum of three primes**  
 
@@ -40,10 +38,8 @@ Use: efficient way to calculate large powers modulo m
 **16. If p is prime → (p - 1)! ≡ -1 mod p**  
 Name: Wilson’s Theorem  
 Use: used to check if p is prime (not common)
-
 **17. To find divisors, loop only from 1 to sqrt(n)**  
 Use: all divisors come in pairs before and after sqrt(n)
-
 **18. 10^9+7 and 998244353 are common mod values in problems**  
 Reason: both are prime, help avoid overflow and make division/mod easier
 
@@ -55,7 +51,6 @@ so,
 if a is odd --> we have a, so b=  $(a*a)/2$  and c = $(a*a)/2+1$;
 if a is even --> we have a, so b = $(a*a)/4 - 1$ and c = $(a*a)/4+1$
 How can we observe it? with generating some triangles and observe what is the relation between the 3 sides. 
-
 ```
 bool isPowerOfTwo(ll n)
 {

@@ -1,6 +1,6 @@
 
 ### Prime Check Template (for very large numbers)
-```cpp
+```
 // Check if a number is prime (accurate for all n ≤ 2^64)
 typedef unsigned long long ull;
 

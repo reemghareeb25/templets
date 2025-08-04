@@ -22,6 +22,7 @@ Some Helpful functions: sq, abs, hypot, sgn
 	`abs(p) = sqrt(x*x + y*y)`
 	*It gives the distance from (0, 0) to (x, y)* — the length of the vector.
 	`abs` here equivalent to `hypot(a, b)`
+
 3) `int sgn(T val){`  --> *return if the Val Pos, Neg, or Zero. (With doubles)*
     `if(val > EPS) return 1;`  
     `if(val <-EPS) return -1;`  

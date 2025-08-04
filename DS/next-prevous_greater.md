@@ -1,3 +1,4 @@
+```
 next, prevous greater
 vector<int> nextGreater(vector<int>& v){
     int n = v.size();
@@ -46,3 +47,4 @@ vector<int> prevSmaller(vector<int>& v) {
     }
     return ans;
 }
+```

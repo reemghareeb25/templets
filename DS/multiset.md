@@ -89,7 +89,7 @@ int val = *s.find_by_order(k);
 // Supports: insert, erase, count, kth smallest, order_of_key
 // Based on Binary Indexed Tree (Fenwick Tree)
 
-```c++
+```
 class Multiset {
 private:
   //use with the positive number only and limited
@@ -155,3 +155,4 @@ public:
 
 };
 ```
+

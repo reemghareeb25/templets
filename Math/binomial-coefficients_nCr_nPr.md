@@ -2,7 +2,7 @@
 
 ### Combinatorics & Counting Template
 
-```cpp
+```
 const int N = 1e6 + 9, oo = 1e17, MOD = 1e9+7;
 // f[i] = i!
 // inv[i] = modular inverse of i
@@ -71,7 +71,7 @@ Example: 13 people in 12 months → 2 people share a birthday month.
 ## Lucas’s Theorem
   كود Lucas’s Theorem (لما P ≤ N) - P هنا هو الـ mod
 
-```cpp
+```
 const int MOD = 1e6 + 3; // لازم يكون P أولي وصغير (<= 1e6 مثلاً)
 int fact[MOD];
 
@@ -115,7 +115,7 @@ int lucas(int n, int k) {
 - بتشتغل كويس حتى لما `n > 1e18` لو `P` صغير
 ---
 ## Extended Lucas + CRT
-```cpp
+```
 typedef long long ll;
 ll mulmod(ll a, ll b, ll mod) {
     return a * b % mod;
@@ -174,7 +174,7 @@ ll extendedLucas(ll n, ll r, const vector<ll>& primes) {
 ```
 
 
-```cpp
+```
 int main() {
     ll n = 1e18, r = 1e6;
     vector<ll> primes = {3, 11, 61};  // M = 3 * 11 * 61 = 2013

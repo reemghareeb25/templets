@@ -1,3 +1,5 @@
+# Usages of graphs 
+
 | **Algorithm**             | **Main Uses**                                                 | **Graph Type**                             | **Tips / Notes**                                         |
 | ------------------------- | ------------------------------------------------------------- | ------------------------------------------ | -------------------------------------------------------- |
 | **DFS**                   | - Explore graph- Find connected components- Detect cycles     | Directed & Undirected                      | Uses recursion – be careful of stack overflow            |

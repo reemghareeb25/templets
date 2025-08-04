@@ -6,7 +6,7 @@ main idea
 
 time complexity  -- > $Sqrt(n)$
 # code
-```cpp
+```
 vector<int> prime_factorization(int num) {
     vector<int> factors;
     if (num < 2) return factors;
@@ -30,7 +30,7 @@ vector<int> prime_factorization(int num) {
 we just iterate until sqrt(n)
 time complexity --> Sqrt(n)
 # code
-```cpp
+```
 int count_divisors(int num) {
     int i, counter = 0;
     for (i = 1; i * i < num; i++) {
@@ -49,7 +49,7 @@ int count_divisors(int num) {
 - we just iterate until sqrt(n)
 time complexity --> Sqrt(n)
 # code
-```cpp
+```
 vector<int> get_divisors(int num) {
     vector<int> divisors;
     ll i;
@@ -69,7 +69,7 @@ vector<int> get_divisors(int num) {
 ----
 # multiples loop - get divisors 
 
-```cpp
+```
 const int N = 1000005;
 vector<int> dv[N];
 void get_divisors() {

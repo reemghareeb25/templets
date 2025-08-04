@@ -1,7 +1,6 @@
 ## Subsequences and subarrays
  1. جميع الـ Subarrays (متتالية):
-
-```cpp
+```
 void Subarrays(const vector<int>& arr) {
     int n = arr.size();
     for (int i = 0; i < n; ++i) {
@@ -12,13 +11,10 @@ void Subarrays(const vector<int>& arr) {
     }
 }
 ```
-
-O($n^2$)
-- عدد الـ subarrays هو $n*(n+1)/2$
+- عدد الـ subarrays هو $n*(n+1)/2$ --> O($n^2$)
 ---
  2. جميع الـ Subsequences (مش شرط متتالية):
-
-```cpp
+```
 void Subsequences(const vector<int>& arr) {
     int n = arr.size();
     for (int mask = 1; mask < (1 << n); ++mask) {
@@ -30,9 +26,7 @@ void Subsequences(const vector<int>& arr) {
     }
 }
 ```
-
-O($2^n$)
-- لأن عدد الـ  $2^n$
+- لأن عدد الـ  $2^n$ --> O($2^n$)
 ---
 ## Expected Value – Quick Contest Note
 Expected Value = sum of (value × probability)
@@ -46,13 +40,10 @@ for (int i = 0; i < n; i++)
 
 expected = 1LL * expected * modInverse(n) % MOD;
 ```
-
----
-### ✅ **If selecting k elements out of n:**
-- Total subsets = `nCr(n, k)`
-- Expected contribution of element `i`:
+### **If selecting k elements out of n:**
+- Total subsets = `nCr(n, k)` - Expected contribution of element `i`:
 Often → count = `nCr(i, k-1)` for each element
-###  **Final Expected Value (Weighted Sum):**
+ **Final Expected Value (Weighted Sum):**
 ```cpp
 ans = total_contribution × modInverse(nCr(n, k)) % MOD;
 ```

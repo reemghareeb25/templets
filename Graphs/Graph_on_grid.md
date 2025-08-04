@@ -1,7 +1,7 @@
 ### **Graphs on Grid – Contest Template**
 
-```cpp
-// ================================================
+```
+// ===============================================
 // Prepared by Reem Elsayed Ghareeb
 // ================================================
 // Common movement arrays + templates for BFS/DFS/grid pathfinding

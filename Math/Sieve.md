@@ -12,7 +12,7 @@
 5 is prime -> we mark 5x5 (25) , 5x6 (30) and so on
 time complexity -->   $n*log(log(n))$
 # code
-```cpp
+```
 const int N = 1000005;
 bool primes[N];
 
@@ -30,7 +30,7 @@ void sieve_generate_primes() {
 ```
 
 # linear sieve O(N)
-```cpp
+```
 int n = 1e6;
     vector<bool> isPrime(n + 1, true);
     vector<int> primes;
