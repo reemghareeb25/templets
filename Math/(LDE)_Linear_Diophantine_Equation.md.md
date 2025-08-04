@@ -5,14 +5,12 @@
 - a * x + b * y = c
 - we will find : 1 sol & all sol & number of sol in range & sol with min x+y
 - note : if a = b = 0 -> c = o -> no. sol = inf , c != 0 -> no. sol = 0
-
 # work
 - we need to calc a * x + b * y = c
 - we first use extended euclidean to find sol (x0,y0) for a * x0 + b * y0 = gcd(a,b) = g
 - x = x0 * ( c / g )
 - y = y0 * ( c / g ) 
 - so if c is divisible by g ( gcd(a,b) ) the integer sol exists
-
 # code for any sol
 ```cpp
 int gcd(int a, int b, int& x, int& y) {
@@ -63,7 +61,6 @@ bool LDE(int a, int b, int c, int &x0, int &y0, int &gc) {
 - if a = b , all solution will have the same sum
 
 # number of sol in range 
-
 ```CPP
 
 void shift_solution(int & x, int & y, int a, int b, int cnt) {

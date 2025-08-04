@@ -24,7 +24,7 @@ int dx8[] = {1, -1, 0, 0, 1, 1, -1, -1};
 int dy8[] = {0, 0, 1, -1, 1, -1, 1, -1};
 
 // -------------------------------
-// 🧭 1. Shortest Path in a Maze
+//  1. Shortest Path in a Maze
 // -------------------------------
 // BFS to find shortest path in unweighted grid
 
@@ -54,7 +54,7 @@ void bfsMaze(int sx, int sy) {
 }
 
 // -------------------------------------
-// 🔥 2. Multi-Source BFS (fire, zombies)
+//  2. Multi-Source BFS (fire, zombies)
 // -------------------------------------
 // Start BFS from multiple starting points (e.g., fire, virus)
 
@@ -78,7 +78,7 @@ void multiSourceBFS(vector<pair<int, int>> sources) {
 }
 
 // -------------------------------------------------
-// 🌊 3. Count Connected Components in a Grid
+//  3. Count Connected Components in a Grid
 // -------------------------------------------------
 // DFS to count separate "islands" or connected groups
 
@@ -102,7 +102,7 @@ int countComponents() {
 }
 
 // ---------------------------------------
-// 🌧️ 4. Boundary Flood Fill (e.g. water)
+//  4. Boundary Flood Fill (e.g. water)
 // ---------------------------------------
 // Spread from boundaries inward (use for ocean flow, etc.)
 
@@ -130,7 +130,7 @@ void floodFromBoundary() {
 }
 
 // ----------------------------------------
-// ⚠️ 5. Grid with Walls or Weighted Cells
+//  5. Grid with Walls or Weighted Cells
 // ----------------------------------------
 // Use Dijkstra if grid has weights other than 1
 

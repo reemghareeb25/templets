@@ -10,7 +10,6 @@ vector<int> nextGreater(vector<int>& v){
     }
     return ans;
 }
-
 vector<int> prevGreater(vector<int>& v) {
     int n = v.size();
     vector<int> ans(n, -1), st;  
@@ -23,7 +22,6 @@ vector<int> prevGreater(vector<int>& v) {
     }
     return ans;
 }
-
 vector<int> nextSmaller(vector<int>& v) {
     int n = v.size();
     vector<int> ans(n, n), st;
@@ -36,7 +34,6 @@ vector<int> nextSmaller(vector<int>& v) {
     }
     return ans;
 }
-
 vector<int> prevSmaller(vector<int>& v) {
     int n = v.size();
     vector<int> ans(n, -1), st;

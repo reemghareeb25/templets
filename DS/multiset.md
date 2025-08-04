@@ -2,7 +2,6 @@
 ## 📘 [ pb_ds Notes – ordered_set / ordered_multiset ]
 
 ## 🧠 Add to Template:
-
 ```cpp
 #include <ext/pb_ds/assoc_container.hpp>
 #include <ext/pb_ds/tree_policy.hpp>
@@ -10,7 +9,6 @@ using namespace __gnu_pbds;
 typedef tree<int,null_type,less<int>,rb_tree_tag,tree_order_statistics_node_update> ordered_set;
 typedef tree<int,null_type,less_equal<int>,rb_tree_tag,tree_order_statistics_node_update> ordered_multiset;
 ```
-
 ---
 ## Functions
 ### ✅ 1. `order_of_key(x)`
@@ -84,9 +82,7 @@ int val = *s.find_by_order(k);
 | Online inversion count          | `order_of_key`  | O(n log n) |
 | Real-time sorted insert + query | both            | O(log n)   |
 
-
 ---
-
 ## Custom Multiset
 
 // ⚠️ Works only for small positive values (≤ 1e6 or so) (or use compression)

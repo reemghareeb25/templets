@@ -1,18 +1,11 @@
 # Prime factorization
-# usage 
-
 - get the prime factors of a number
-  
-# main idea
-
+main idea
 - every composite number(not-prime) have at least 1 prime below sqrt(n) so we check until sqrt(n)
 - if the remaining is not 1 then the number is prime
 
-# time complexity
-  ### $Sqrt(n)$
-
+time complexity  -- > $Sqrt(n)$
 # code
-
 ```cpp
 vector<int> prime_factorization(int num) {
     vector<int> factors;
@@ -33,18 +26,10 @@ vector<int> prime_factorization(int num) {
 ```
 ---
 # Count_divisors 
-# usage 
 - count the number of divisors
-
-# main idea
-
-- we just iterate until sqrt(n)
-
-# time complexity
-  ### Sqrt(n)
-
+we just iterate until sqrt(n)
+time complexity --> Sqrt(n)
 # code
-
 ```cpp
 int count_divisors(int num) {
     int i, counter = 0;
@@ -55,27 +40,15 @@ int count_divisors(int num) {
     return counter;
 }
 ```
-
-
 # by prime fact
 - number of divisors = pow1+1 * pow2+1 * ..
-
   ex : 12 = 2^2 * 3^1 -> no div = 2+1 * 1+1 = 6
 ----
 # get_divisors 
-# usage 
-
 - get the divisors of a number
-
-# main idea
-
 - we just iterate until sqrt(n)
-
-# time complexity
-  ### Sqrt(n)
-
+time complexity --> Sqrt(n)
 # code
-
 ```cpp
 vector<int> get_divisors(int num) {
     vector<int> divisors;
@@ -90,9 +63,8 @@ vector<int> get_divisors(int num) {
     return divisors;
 }
 ```
-# bonus
+### bonus
 - number of divisors = pow1+1 * pow2+1 * ..
-
   ex : 12 = 2^2 * 3^1 -> no div = 2+1 * 1+1 = 6
 ----
 # multiples loop - get divisors 

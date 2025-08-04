@@ -1,7 +1,6 @@
 #### **Having a point, p(a, b)**
 To get the *angle* between this vector, We can use *arg* or *atan2* functions.
 Those two function output the angle with radian, if we need t convert it into degrees, just *(Val * 180 / M_PI)*
-
 `#define ld long double`
 `typedef ld T;`  
 `typedef complex<T> pt;`  
@@ -15,17 +14,14 @@ Those two function output the angle with radian, if we need t convert it into de
 
 ----
 Some Helpful functions: sq, abs, hypot, sgn
-
 1) `T sq(pt p){` 
 	`return p.x * p.x + p.y * p.y;`  
 	`}`
-
 2) `abs(p)` with `complex`
 	If `p = {x, y}` is a `complex<T>` point, then:
 	`abs(p) = sqrt(x*x + y*y)`
 	*It gives the distance from (0, 0) to (x, y)* — the length of the vector.
 	`abs` here equivalent to `hypot(a, b)`
-
 3) `int sgn(T val){`  --> *return if the Val Pos, Neg, or Zero. (With doubles)*
     `if(val > EPS) return 1;`  
     `if(val <-EPS) return -1;`  

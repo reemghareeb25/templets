@@ -1,16 +1,11 @@
 # Sieve Prime factorization 
-
-## usage 
-
 - generate all prime factors for queries
-## main idea
+### main idea
 - same as sieve but instead of true and false we put the prime itself
 - now every index has the smallest prime possible
 - we can now index/value to get the new index and so on
-# time complexity
-  ### $nlog(n)$
+ time complexity --> $nlog(n)$
 # code 1
-
 ```cpp
 /*
 outside the tests :
@@ -52,7 +47,6 @@ prime_fact_queries()
 */
 
 const int N = 1000005;
-
 vector<vector<pair<int, int>>> prime_fact_queries(){
     int n = N;
     vector<vector<pair<int, int>>> arr(n);

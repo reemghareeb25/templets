@@ -1,4 +1,4 @@
-| 🧩 **Algorithm**          | 🔧 **Main Uses**                                              | 🕸️ **Graph Type**                         | 💡 **Tips / Notes**                                      |
+| **Algorithm**             | **Main Uses**                                                 | **Graph Type**                             | **Tips / Notes**                                         |
 | ------------------------- | ------------------------------------------------------------- | ------------------------------------------ | -------------------------------------------------------- |
 | **DFS**                   | - Explore graph- Find connected components- Detect cycles     | Directed & Undirected                      | Uses recursion – be careful of stack overflow            |
 | **BFS**                   | - Shortest path in unweighted graphs- Level order traversal   | Directed or Undirected                     | Distance = number of steps                               |
