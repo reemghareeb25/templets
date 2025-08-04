@@ -55,3 +55,11 @@ so,
 if a is odd --> we have a, so b=  $(a*a)/2$  and c = $(a*a)/2+1$;
 if a is even --> we have a, so b = $(a*a)/4 - 1$ and c = $(a*a)/4+1$
 How can we observe it? with generating some triangles and observe what is the relation between the 3 sides. 
+
+```
+bool isPowerOfTwo(ll n)
+{
+    if (n <= 0) return false;
+    return !(n & (n - 1));
+}
+```
